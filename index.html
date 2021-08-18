@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El tiempo</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://kit.fontawesome.com/c71cba29f7.js" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <div class="contenedor-datos-formulario">
+            <h1>Buscador meteorológico</h1>
+            <p class="info">Bienvenido al buscador meteorológico. Esta pequeña aplicación utiliza los datos
+                proporcionados por la API OpenWeatherMap. Para más información <a href="https://openweathermap.org/"
+                    target="_blank">pincha aquí</a></p>
+            <label for="ciudad">Introduce la ciudad</label>
+            <input type="text" name="ciudad" id="ciudad">
+            <input type="submit" name="enviar" id="enviar">
+        </div>
+        <div class="contenedor-datos-meteorologicos disabled" id="datos">
+            <p id="nombre"></p>
+            <div id="icono">
+                <img src="" alt="icono-meteorologico">
+                <p class="estado" id="estado"></p>
+            </div>
+            <div class="datos">
+                <p id="temperatura-actual"></p>
+                <div class="rango-temperatura">
+                    <div class="max">
+                        <i class="fas fa-thermometer-three-quarters"></i>
+                        <p id="maxima"></p>
+                    </div>
+                    <div class="min">
+                        <i class="fas fa-thermometer-quarter"></i>
+
+                        <p id="minima"></p>
+
+                    </div>
+                    <div class="humidity">
+                        <i class="fas fa-tint"></i>
+                        <p id="humedad"></p>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <h2 class="disabled">Leyenda</h2>
+        <div class="leyenda disabled" >
+          
+            <div class="resumen">
+                <i class="fas fa-thermometer-three-quarters"></i>
+                <p>Maxima</p>
+
+            </div>
+            <div class="resumen">
+                <i class="fas fa-thermometer-quarter"></i>
+                <p>Minima</p>
+            </div>
+            <div class="resumen">
+                <i class="fas fa-tint"></i>
+                <p class="p-humedad">Humedad</p>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
